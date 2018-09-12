@@ -18,8 +18,14 @@ using namespace std;
 
 bool isUnique(string myString, bool *ASCIIset, unsigned int n){
     if(n==0) ASCIIset= new bool[ASCIISIZE];
-    if(ASCIIset[myString[n]]) return false;
-    if(n==myString.size())return true;
+    if(ASCIIset[myString[n]]){
+        delete [] ASCIIset;
+        return false;
+    }
+    if(n==myString.size()){
+        delete [] ASCIIset;
+        return true;
+    }
     ASCIIset[myString[n]]=true;
     return isUnique(myString,ASCIIset,n+1);
 }
