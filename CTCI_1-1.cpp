@@ -9,11 +9,9 @@
 #include <stdio.h>
 #include <iostream>
 #include "chapter1.h"
+#include <string>
 
 const unsigned short ASCIISIZE=256;
-
-#include <stdio.h>
-#include <string>
 using namespace std;
 
 bool isUnique(string myString, bool *ASCIIset, unsigned int n){
