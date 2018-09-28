@@ -1,4 +1,4 @@
-#Solutions to Cracking the Coding Interview in C++
+Solutions to Cracking the Coding Interview in C++
 
 Chapter 1
 
